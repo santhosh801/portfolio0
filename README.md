@@ -52,20 +52,8 @@ This is my personal portfolio website, designed with **HTML & CSS** to showcase 
 ✅ **Improved UX with Smooth Navigation** 🏎️  
 
 ---
-
-## 📢 Upcoming Updates 🚀
-- 🎥 **YouTube Tutorials on Portfolio Building**  
-- 🏆 **Advanced Animations for UI Enhancement**  
-- 🔗 **Integration with JavaScript for Interactive Features**  
-
-Stay Tuned! More awesome updates are coming! 😍🔥
-
----
-
 ## 📞 Contact Me
 📧 **Email:** san0thosh08@gmail.com  
 🔗 **GitHub:** [santhosh80](https://github.com/santhosh80)  
-)
 
----
 
