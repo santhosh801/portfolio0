@@ -1,0 +1,87 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #333;
+    margin-top: 20px;
+  }
+  
+  .contact-heading {
+    font-size: 48px;
+    color: #ff8c00;
+    margin-bottom: 40px;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Contact Info Layout */
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-item {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-item h3 {
+    font-size: 22px;
+    color: #ff8c00;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item p {
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  .contact-item a {
+    text-decoration: none;
+    color: #ff8c00;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-item a:hover {
+    color: #fff;
+  }
+  
+  /* Responsive Layout for smaller screens */
+  @media (max-width: 768px) {
+    .contact-info {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

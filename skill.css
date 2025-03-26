@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-color: black;
+    font-family: "Crimson Text", serif;
+    background-image: url('sff.jpg');
+    background-position: top;
+    background-size: cover;
+    animation: moveBackground 5s linear infinite;
+  }
+  
+  /* Card Styling */
+  .card {
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+    max-width: 900px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 10px 20px 30px rgba(0, 0, 0, 0.4);
+    animation: glow 1s infinite;
+    display: flex;
+    margin-top: 70px;
+    border: 4px solid black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  /* Glowing Effect */
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #ffffff, 0 0 10px #fefefe, 0 0 20px #000000;
+    }
+    50% {
+      box-shadow: 0 0 10px #000000, 0 0 20px #ffffff, 0 0 30px #ffffff;
+    }
+    100% {
+      box-shadow: 0 0 5px #000000, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    }
+  }
+  
+  /* Background Animation */
+  @keyframes moveBackground {
+    0% {
+      background-position: left;
+    }
+  
+    100% {
+      background-position: right;
+    }
+  }
+  
+  /* Section Titles */
+  .skills-section h3 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #000000;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+  }
+  
+  /* Skill List Layout */
+  .skill-list {
+    display: grid;
+    grid-template-columns: repeat(9 ,3fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  /* Skill Styling */
+  .skill {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Glowing Hover Effect */
+  .skill:hover {
+    transform: scale(1.6);
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8);
+    background-color: #f80000;
+  }
+  
+  .skill:active {
+    box-shadow: 0px 0px 15px rgb(255, 234, 234);
+    background-color: #444;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .skill-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
